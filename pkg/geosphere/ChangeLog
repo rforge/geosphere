@@ -1,4 +1,8 @@
+
 -- Current version
+distHaversine bugged in some cases for antipodes: https://stackoverflow.com/questions/45889616/why-does-disthaversine-return-nan-for-some-pairs-of-coordinates#
+
+-- 15 June 2016, version 1.5-5
 Fixed error in gcMaxLat (reported by William Smith)
 Bug fix in antipodal (reported by Gareth Davies)
 Bug fix in gcIntermediate when crossing the date line
