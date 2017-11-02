@@ -6,7 +6,7 @@
 # version 0.1
 # license GPL3
 
-dist2gc <- function(p1, p2, p3, r=6378137) {
+dist2gc <- function(p1, p2, p3, r=6378137, sign=FALSE) {
 	toRad <- pi / 180 
 	p1 <- .pointsToMatrix(p1)
 	p2 <- .pointsToMatrix(p2)
@@ -21,7 +21,9 @@ dist2gc <- function(p1, p2, p3, r=6378137) {
 	tc <- bearing(p1, p2) * toRad
 	tcp <- bearing(p1, p3) * toRad
     dp <- distCosine(p1, p3, r=1)
-	xtr <- abs(asin(sin(tcp-tc) * sin(dp)) * r)
-	as.vector(xtr)
+	xtr <- (asin(sin(tcp-tc) * sin(dp)) * r)
+	xtr <- as.vector(xtr)
+	if (!sign) xtr <- abs(xtr)
+	xtr
 }
 
