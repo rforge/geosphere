@@ -12,7 +12,7 @@ Compute the distance of a point to a great-circle path (also referred to as the 
 }
 
 \usage{
-dist2gc(p1, p2, p3, r=6378137)
+dist2gc(p1, p2, p3, r=6378137, sign=FALSE)
 }
 
 \arguments{
@@ -42,7 +42,7 @@ Ed Williams and Robert Hijmans
 \references{
 \url{http://www.movable-type.co.uk/scripts/latlong.html}
 
-\url{http://williams.best.vwh.net/ftp/avsig/avform.txt}
+\url{http://www.edwilliams.org/ftp/avsig/avform.txt}
 }
 
 

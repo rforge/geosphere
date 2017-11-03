@@ -41,7 +41,7 @@ Geographic locations must be specified in longitude and latitude (and in that or
 
 The default unit of distance is meter; but this can be adjusted by supplying a different radius 'r' to functions. Directions are expressed in degrees (N = 0 and 360,  E = 90, S = 180, and W = 270 degrees). If arguments of functions that take several arguments (e.g. points, bearings, radius of the earth), do not have the same length (for vectors) or number of rows (for matrices) the shorter arguments are re-cycled.
 
-Many functions in this package are based on formulae provided by Ed Williams (\url{http://williams.best.vwh.net/ftp/avsig/avform.txt}, and partly on javascript implementations of these formulae by Chris Veness (\url{http://www.movable-type.co.uk/scripts/latlong.html} )
+Many functions in this package are based on formulae provided by Ed Williams (\url{http://www.edwilliams.org/ftp/avsig/avform.txt}, and partly on javascript implementations of these formulae by Chris Veness (\url{http://www.movable-type.co.uk/scripts/latlong.html} )
 
 Most geodesic computations (for a spheroid rather than a sphere) use the GeographicLib by C.F.F. Karney (\url{http://geographiclib.sourceforge.net/}.
 
