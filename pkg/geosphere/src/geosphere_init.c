@@ -8,14 +8,14 @@
 */
 
 /* .Call calls */
-extern SEXP geodesic(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
-extern SEXP inversegeodesic(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
-extern SEXP polygonarea(SEXP, SEXP, SEXP, SEXP);
+extern SEXP _geodesic(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
+extern SEXP _inversegeodesic(SEXP, SEXP, SEXP, SEXP, SEXP, SEXP);
+extern SEXP _polygonarea(SEXP, SEXP, SEXP, SEXP);
 
 static const R_CallMethodDef CallEntries[] = {
-    {"geodesic",        (DL_FUNC) &geodesic,        6},
-    {"inversegeodesic", (DL_FUNC) &inversegeodesic, 6},
-    {"polygonarea",     (DL_FUNC) &polygonarea,     4},
+    {"_geodesic",        (DL_FUNC) &_geodesic,        6},
+    {"_inversegeodesic", (DL_FUNC) &_inversegeodesic, 6},
+    {"_polygonarea",     (DL_FUNC) &_polygonarea,     4},
     {NULL, NULL, 0}
 };
 
