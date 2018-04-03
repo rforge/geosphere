@@ -6,8 +6,8 @@
 distGeo <- function(p1, p2, a=6378137, f=1/298.257223563) {
 	p1 <- .pointsToMatrix(p1) 
 	if (missing(p2)) {
-		p2 <- p1[-1,]
-		p1 <- p1[-nrow(p1),]
+		p2 <- p1[-1, ,drop=FALSE]
+		p1 <- p1[-nrow(p1), ,drop=FALSE]
 	} else {
 		p2 <- .pointsToMatrix(p2) 	
 	}
